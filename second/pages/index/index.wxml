@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 头部布局 -->
+  <view class="header">
+     <view class="header_left">
+        <image class="img1" src="/images/01.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+      <input class="inpt1" value="" type="text|number|idcard|digit|time|date" password="false" placeholder="搜索" placeholder-style="" placeholder-class="input-placeholder"
+        disabled="false" maxlength="140" focus="false" bindinput="" bindfocus="" bindblur="" bindconfirm="">   
+      </input>
+     </view>
+       
+        <image class="img2" src="/images/02.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+  </view>
+  <!-- 影院热映 -->
+    <view class="content">
+      <text class="content_text1">影院热映</text>
+      <text>用App看更多30</text>
+    </view>
+    <!-- 6个图片布局 -->
+    <view class="picture_container">
+      <view class="first">
+         <image class="first_img1" src="/images/03.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+         <text class="first_text1">多利特奇幻冒险</text>    
+      </view>
+      <view class="first">
+         <image class="first_img1" src="/images/04.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+         <text class="first_text1">乔乔的异想世界</text>    
+      </view>
+      <view class="first">
+         <image class="first_img1" src="/images/05.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+         <text class="first_text1">抵达之谜</text>    
+      </view>
+      <view class="first">
+         <image class="first_img1" src="/images/06.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+         <text class="first_text1">刺猬索尼克</text>    
+      </view>
+      <view class="first">
+         <image class="first_img1" src="/images/07.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+         <text class="first_text1">妙先生</text>    
+      </view>
+      <view class="first">
+         <image class="first_img1" src="/images/08.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+         <text class="first_text1">喋血战士</text>    
+      </view>
+        
+    </view>
+    <!-- tabbar -->
+      
+  
+ 
+    
+</view>

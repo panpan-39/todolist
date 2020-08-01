@@ -1,0 +1,4 @@
+/* pages/mine/mine.wxss */
+text {
+  color: yellow;
+}

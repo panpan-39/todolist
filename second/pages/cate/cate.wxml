@@ -1,0 +1,42 @@
+<!--pages/cate/cate.wxml-->
+<view class="todo_header">
+<!-- 头部布局 -->
+   <text class="text1" bindtap="jump">ToDoList</text>
+   <view class="header_wrapper">
+     <input class="inpt" value="{{val}}" type="text" placeholder="添加ToDo" placeholder-style="" placeholder-class="input-placeholder"
+         bindinput="getValue"> 
+     </input>
+     <view class="add" bindtap="add">添加</view> 
+   </view>
+<!-- 内容布局 -->
+  <view class="content_container">
+  <!-- 正在进行 -->
+    <view>
+      <view class='pending_header'> <view>正在进行</view> <view>{{pendding.length}}</view></view>
+      <view class="pending_items" wx:for="{{pendding}}" wx:key="index">
+        <view>
+          <checkbox catchtap="check" data-i="{{index}}" data-checked="{{item.checked}}" checked="{{item.checked}}" ></checkbox>
+        </view>
+        <text bindtap="edit" data-checked="{{item.checked}}" data-i="{{index}}" class="view2" wx:if="{{!item.edit}}">{{item.val}}</text>
+        <input class="view2" focus bindinput="editValue" bindblur="exitEdit" data-checked="{{item.checked}}"s data-i="{{index}}" wx:else>{{item.val}}</input>
+        <view bindtap="del" data-i="{{index}}" data-checked="{{item.checked}}">删除</view>
+      </view>
+    </view>
+    <!-- 已经完成 -->
+    <view>
+      <view class='pending_header'> <view>已经完成</view> <view>{{finished.length}}</view> </view>
+     <view class="pending_items" wx:for="{{finished}}" wx:key="index">
+        <view>
+          <checkbox catchtap="finishCheck" checked="{{item.checked}}" data-i="{{index}}" data-checked="{{item.checked}}"></checkbox>
+        </view>
+        <text bindtap="edit" data-checked="{{item.checked}}" data-i="{{index}}" class="view2" wx:if="{{!item.edit}}">{{item.val}}</text> 
+        <input class="view2" focus bindinput="editValue" bindblur="exitEdit" data-i="{{index}}" data-checked="{{item.checked}}" wx:else>{{item.val}}</input>
+        <view bindtap="del" data-i="{{index}}" data-checked="{{item.checked}}">删除</view>
+      </view>
+
+    </view>  
+  
+  </view>
+
+
+</view>
